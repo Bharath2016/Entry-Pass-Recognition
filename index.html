@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body
+{
+background-color:powderblue
+}
+h1 
+{font-family:comic sans MS;
+color:#040404
+}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>Students Entrance Check</b></h1>
+  <p><b>Using OCR</b></p>
+  <form action= '/' method="POST" enctype = "multipart/form-data">
+        <input type="file" name="photo">
+        <input id = 'input' type = 'text' name = 'img-name'>
+        <button type="submit"><b>Submit</b></button>
+   </form><br><br>
+</header>
+</div>
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src={{ url_for('static', filename="image1.jpg") }} style="width:100%">
+    <img src={{ url_for('static', filename="image2.jpg") }} style="width:100%">
+    <img src={{ url_for('static', filename="image11.jpg") }} style="width:100%">
+    <img src={{ url_for('static', filename="image12.jpg") }} style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src={{ url_for('static', filename="image6.jpg") }} style="width:100%">
+    <img src={{ url_for('static', filename="image7.jpg") }} style="width:100%">
+    <img src={{ url_for('static', filename="image8.png") }} style="width:100%">
+    <img src={{ url_for('static', filename="image9.png") }} style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src={{ url_for('static', filename="image4.png") }} style="width:100%">
+    <img src={{ url_for('static', filename="image5.png") }} style="width:100%">
+    <img src={{ url_for('static', filename="image1.jpg") }} style="width:100%">
+    <img src={{ url_for('static', filename="image14.png") }} style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-16 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Done by <a href="#" target="_blank" class="w3-hover-text-green">GROUP-22</a></p>
+  <p class="w3-medium"><b>Nikhileswar - EDM18B017</b></p>
+  <p class="w3-medium"><b>Karthik - EDM18B023</b></p>
+  <p class="w3-medium"><b>Bharath - ESD18I009</b></p>
+</footer>
+ 
+<script>
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
